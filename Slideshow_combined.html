@@ -1,6 +1,6 @@
 <div class="w3-content w3-display-container">
 
-  <div class="mySlides">
+  <div class="mySlides my-fade">
       <figure class="slider">
         <figure>
           <!-- <img src="/ImageRepository/Document?documentID=325" alt=""> -->
@@ -16,7 +16,7 @@
       </figure>
   </div>
 
-  <div class="mySlides">
+  <div class="mySlides my-fade">
       <figure class="slider">
         <figure>
           <a href="/266/Author-Expo" style="text-decoration: none;">
@@ -38,7 +38,7 @@
       </figure>
   </div>
 
-  <div class="mySlides">
+  <div class="mySlides my-fade">
       <figure class="slider">
         <figure>
           <a href="/273/A-Library-Card">
@@ -56,7 +56,7 @@
       </figure>
   </div>
 
-  <div class="mySlides">
+  <div class="mySlides my-fade">
       <figure class="slider">
         <figure>
           <a href="http://www.brainfuse.com/highed/helpNow.asp?a_id=C1A47DFE&ss=&r=">
@@ -89,7 +89,7 @@
 <style>
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-content{max-width:1200px;margin:auto}
+.w3-content{max-width:1200px;margin:auto;}
 .w3-display-container{position:relative}
 .w3-center{text-align:center}
 .w3-section{margin-top:12px;margin-bottom:12px}
@@ -100,6 +100,14 @@
 .w3-badge{background-color:#cdcdcd;color:#959595;display:inline-block;text-align:center;border-radius:50%;height:8px;width:8px;margin: 0 5px;}
 .w3-text-grey{color:#cdcdcd;}
 .w3-grey,.w3-hover-grey:hover{color:#cdcdcd;background-color:#959595}
+.w3-animate-fading{-webkit-animation:fading 10s infinite;animation:fading 10s infinite}
+@-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:1}}
+@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:1}}
+.my-fade {
+  background-color: #000;
+  animation-name: fading;
+  animation-duration: .45s;
+}
 
 /*CSS from original slider*/
 figure {
