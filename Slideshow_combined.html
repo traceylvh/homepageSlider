@@ -185,6 +185,7 @@ function plusDivs(n) {
 
 function currentDiv(n) {
   showDivs(slideIndex = n);
+  // clearTimeout(carousel);
 }
 
 function showDivs(n) {
@@ -203,7 +204,7 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-grey";
 }
 
-var myIndex = 0;
+// var myIndex = 0;
 carousel();
 
 function carousel() {
@@ -212,10 +213,10 @@ function carousel() {
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";
     }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    currentDiv(myIndex);
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    currentDiv(slideIndex);
     setTimeout(carousel, 5000); // Change image every 5 seconds
 }
 </script>
