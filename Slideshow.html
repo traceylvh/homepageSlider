@@ -1,238 +1,180 @@
-<!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-<body>
+<div id="captioned-gallery">
+    <figure class="slider">
+
+      <!--  1st and last side - should match for consistency/smooth transitions -->
+      <figure>
+        <!-- <img src="/ImageRepository/Document?documentID=325" alt=""> -->
+        <img src="images/HomepageImage_girlSalamander.jpg" alt="">
+          <figcaption>
+            <section>
+              <h4>Inspire Curiosity. </h4>
+              <h4>Champion Innovation. </h4>
+              <h4>Spark Opportunity. </h4>
+            </section>
+          </figcaption>
+      </figure>
+
+      <!--  2nd slide  -->
+      <figure>
+        <a href="/266/Author-Expo" style="text-decoration: none;">
+          <!-- <img src="/ImageRepository/Document?documentID=326" alt=""> -->
+          <img src="images/HomepageImage_authorExpo.jpg" alt="">
+        <figcaption>
+          <section>
+          <h4>Author Expo 2016</h4>
+          <p>Saturday, October 1, 2016 <br>
+            9:30 a.m. &ndash; 12:30 p.m. </p>
+          <p>
+            R.H. Stafford Library <br>
+            8595 Central Park Place <br>
+            Woodbury, MN </p>
+        </a>
+      </section>
+      </figcaption>
+      </figure>
+
+      <!-- 3rd slide  -->
+      <figure>
+        <a href="/273/A-Library-Card">
+        <!-- <img src="/ImageRepository/Document?documentID=327" alt=""> -->
+        <img src="images/HomepageImage_LibCardWeek.jpg" alt="">
+        <figcaption>
+          <section>
+          <h4>September is <br>
+          Library Card Sign-up Month</h4>
+          <p>Get yours today! </p>
+        </section>
+        </figcaption>
+        </a>
+      </figure>
+
+      <!--  4th slide  -->
+      <figure>
+        <a href="http://www.brainfuse.com/highed/helpNow.asp?a_id=C1A47DFE&ss=&r=">
+        <!-- <img src="/ImageRepository/Document?documentID=331" alt=""> -->
+        <img src="images/HomepageImage_homeworkRescue.jpg" alt="">
+        <figcaption>
+          <section>
+            <h4>Stuck on homework?</h4>
+          <p>All you need is your library card to get free online homework help</p>
+          </section>
+        </figcaption>
+        </a>
+      </figure>
+
+      <!--  1st and last side - should match for consistency/smooth transitions  -->
+      <figure>
+        <!-- <img src="/ImageRepository/Document?documentID=325" alt=""> -->
+        <img src="images/HomepageImage_girlSalamander.jpg" alt="">
+          <figcaption>
+            <section>
+              <h4>Inspire Curiosity. </h4>
+              <h4>Champion Innovation. </h4>
+              <h4>Spark Opportunity. </h4>
+            </section>
+          </figcaption>
+      </figure>
 
 
-<div class="w3-content" style="max-width:1200px;position:relative">
-
-<div class="w3-display-container mySlides">
-  <img src="images\HomepageImage_girlSalamander.jpg">
-  <div class="sliderCaption">
-    <section>
-    <h4>Inspire Curiosity. </h4>
-    <h4>Champion Innovation. </h4>
-    <h4>Spark Opportunity. </h4>
-  </section>
+    </figure>
   </div>
-</div>
 
-<div class="w3-display-container mySlides">
-  <img src="images\HomepageImage_authorExpo.jpg">
-  <div class="sliderCaption">
-    <section>
-    <h4>Author Expo 2016</h4>
-  <p>Saturday, October 1, 2016 <br>
-    9:30 a.m. &ndash; 12:30 p.m. </p>
-  <p>
-    R.H. Stafford Library <br>
-    8595 Central Park Place <br>
-    Woodbury, MN </p>
-  </section>
-  </div>
-</div>
+  <style>
+  @keyframes slidy {
+    0% {
+      left: 0%; }
+    20% {
+      left: 0%; }
+    25% {
+      left: -100%; }
+    45% {
+      left: -100%; }
+    50% {
+      left: -200%; }
+    70% {
+      left: -200%; }
+    75% {
+      left: -300%; }
+    95% {
+      left: -300%; }
+    100% {
+      left: -400%; } }
+  figure {
+    margin: 0; }
 
-<div class="w3-display-container mySlides">
-  <img src="images\HomepageImage_LibCardWeek.jpg">
-  <div class="sliderCaption">
-    <section>
-      <h4>September is <br>
-      Library Card Sign-up Month</h4>
-      <p><a href="/273/A-Library-Card">Get yours today!</a> </p>
-    </section>
-  </div>
-</div>
+  div#captioned-gallery {
+    width: 100%;
+    overflow: hidden; }
 
-<div class="w3-display-container mySlides">
-  <img src="images\HomepageImage_homeworkRescue.jpg">
-  <div class="sliderCaption">
-    <section>
-      <h4>Stuck on homework?</h4>
-    <p>All you need is your library card to get <a href="http://www.brainfuse.com/highed/helpNow.asp?a_id=C1A47DFE&ss=&r=">free online homework help</a></p>
-    </section>
-  </div>
+  figure.slider {
+    position: relative;
+    width: 500%;
+    font-size: 0;
+    animation: 30s slidy infinite; }
 
-</div>
+  figure.slider figure {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    position: inherit; }
 
-<!-- <div class="w3-center">
-  <div class="w3-section">
-    <button class="w3-btn" onclick="plusDivs(-1)">❮ Prev</button>
-    <button class="w3-btn" onclick="plusDivs(1)">Next ❯</button>
-  </div>
-  <button class="w3-btn demo" onclick="currentDiv(1)">1</button>
-  <button class="w3-btn demo" onclick="currentDiv(2)">2</button>
-  <button class="w3-btn demo" onclick="currentDiv(3)">3</button>
-  <button class="w3-btn demo" onclick="currentDiv(4)">4</button>
-</div>
+  figure.slider img {
+    width: 100%;
+    height: auto; }
 
+  figure.slider figure figcaption {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 25%;
+    height: 100%;
+    /*font-family: serif;*/
+    padding: 0 1.2rem;
+    text-align: center;
+  }
 
-
-<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)"><</a>
-<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">></a>
-
-</div> -->
-<div class="w3-center w3-section w3-large w3-text-white w3-display-bottomleft" style="width:100%">
-    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-  </div>
-
-<script>
-
-var slideIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
+  figure.slider figure figcaption h4 {
+    font-family: "Open Sans", sans-serif;
+      font-size: 1.7rem;
+      line-height: 2.2rem;
+      margin: 0 0 1rem 0;
     }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1}
-    x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 4000); // Change image every 2 seconds
-}
-// var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+  figure.slider figure figcaption section {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
+  figure.slider figure figcaption p {
+    font-family: serif;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin-top: .8rem; }
 
-// var slideIndex = 1;
-// showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
-
-<style>
-/*@keyframes slidy {
-  0% {
-    left: 0%; }
-  20% {
-    left: 0%; }
-  25% {
-    left: -100%; }
-  45% {
-    left: -100%; }
-  50% {
-    left: -200%; }
-  70% {
-    left: -200%; }
-  75% {
-    left: -300%; }
-  95% {
-    left: -300%; }
-  100% {
-    left: -400%; } }*/
-/*figure {
-  margin: 0; }
-
-div#captioned-gallery {
-  width: 100%;
-  overflow: hidden; }
-
-figure.slider {
-  position: relative;
-  width: 500%;
-  font-size: 0;
-  animation: 30s slidy infinite; }
-
-figure.slider figure {
-  width: 20%;
-  height: auto;
-  display: inline-block;
-  position: inherit; }*/
-
-.mySlides {
-  position: relative;
-  margin: 0;
-  max-width: 1200px;
-  overflow: hidden;
-}
-
-.mySlides img {
-  width: 100%;
-  height: auto;
-}
-
-.sliderCaption {
-  position: absolute;
-  top: 0;
-  right: 3%;
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  width: 25%;
-  height: 100%;
-  font-family: serif;
-  padding: 0 1.2rem;
-  text-align: center;
-}
-
-.sliderCaption h4 {
-    font-size: 1.8rem;
-    line-height: 2.3rem;
-    margin: 0 0 1rem 0;
-  }
-
-.sliderCaption section {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  }
-
-.sliderCaption p {
-  font-size: 1.3rem;
-  line-height: 1.9rem;
-  margin-top: .8rem; }
-
-figure.slider figure figcaption a {
-    color: #fff !important;
-  }
+  figure.slider figure figcaption a {
+      color: #fff !important;
+    }
 
 @media only screen and (max-width: 450px) {
-figure.slider figure figcaption {
-  display: none;
+  figure.slider figure figcaption {
+    display: none;
+  }
 }
 
-</style>
+  @media only screen and (max-width: 1000px) {
+    figure.slider figure figcaption h4 {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        margin: 0 0 .6rem 0;
+      }
+      figure.slider figure figcaption p {
+        font-size: .8rem;
+        line-height: 1.2rem;
+        margin-top: .5rem;
+      }
+  }
 
-</body>
-</html>
+  </style>
