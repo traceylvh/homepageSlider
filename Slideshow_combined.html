@@ -19,12 +19,10 @@ figure {
 
 figure.slider {
   position: relative;
-  width: 500%;
   font-size: 0;
-  animation: 30s slidy infinite; }
+ }
 
 figure.slider figure {
-  width: 20%;
   height: auto;
   display: inline-block;
   position: inherit; }
@@ -90,7 +88,7 @@ figure.slider figure figcaption {
 </style>
 
 
-<div class="w3-content w3-display-container" style="max-width:800px">
+<div class="w3-content w3-display-container">
 
   <div class="mySlides">
       <figure class="slider">
@@ -218,6 +216,6 @@ function carousel() {
     if (myIndex > x.length) {myIndex = 1}
     x[myIndex-1].style.display = "block";
     currentDiv(myIndex);
-    setTimeout(carousel, 3000); // Change image every 2 seconds
+    setTimeout(carousel, 5000); // Change image every 5 seconds
 }
 </script>
