@@ -74,8 +74,8 @@
   </div>
 
   <div class="w3-center w3-section" style="width:100%">
-    <div class="w3-left w3-padding-left w3-text-grey w3-hover-text-dkgrey" style="font-size:22px; margin-top:-10px;" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-padding-right w3-text-grey w3-hover-text-dkgrey" style="font-size:22px; margin-top:-10px;" onclick="plusDivs(1)">&#10095;</div>
+    <!-- <div class="w3-left w3-padding-left w3-text-grey w3-hover-text-dkgrey" style="font-size:22px; margin-top:-10px;" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-text-grey w3-hover-text-dkgrey" style="font-size:22px; margin-top:-10px;" onclick="plusDivs(1)">&#10095;</div> -->
 
     <span class="w3-badge demo w3-border w3-hover-grey" onclick="currentDiv(1)"></span>
     <span class="w3-badge demo w3-border w3-hover-grey" onclick="currentDiv(2)"></span>
@@ -164,12 +164,25 @@ figure.slider figure figcaption a {
   }
 
 @media only screen and (max-width: 450px) {
-figure.slider figure figcaption {
+    .w3-content {
   display: none;
-}
+  }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 451px) and (max-width: 720px) {
+  figure.slider figure figcaption h4 {
+      font-size: 1rem;
+      line-height: 1.3rem;
+      margin: 0 0 .4rem 0;
+    }
+    figure.slider figure figcaption p {
+      font-size: .6rem;
+      line-height: .9rem;
+      margin-top: .3rem;
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 950px) {
   figure.slider figure figcaption h4 {
       font-size: 1.2rem;
       line-height: 1.8rem;
